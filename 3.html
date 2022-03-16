@@ -3,17 +3,59 @@
 <head>
   <title>MINGJJU3</title>
   <meta charset="utf-8">
+  <style>
+    body{
+      margin: 0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin:0;
+      padding: 20px;
+    }
+    #grid ol {
+      border-right: 1px solid gray;
+      width: 110px;
+      margin: 0;
+      padding: 20px;
+      padding-left: 32px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #article{
+      padding-left: 38px;
+    }
+    @media(max-width:760px){
+      #grid{
+        display: block;
+      }
+      #grid ol {
+        border-right: none;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">밍쭈</a></h1>
-  <ol>
-    <li><a href="1.html">About밍쭈</a></li>
-    <li><a href="2.html">출생과 성장</a></li>
-    <li><a href="3.html">좋아하는것</a></li>
-  </ol>
-  <h2>좋아하는것</h2>
-  <p>
-    밍쭈는 활발한 성격이라 뛰어 노는것을 좋아한다. 또한 먹성이 좋아 왠만한 간식은 다 좋아한다. 그리고 낮에 햇볓을쬐면서 창문밖을 보거나 낮잠자는 것을 좋아한다. 이 때에는 주로 캣타워에 올라가거나 내방에 있는 고양이 창문 해먹에 올라가있는다.
-  </p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html"style="color:red">About밍쭈</a></li>
+      <li><a href="2.html"style="color:orange">출생과 성장</a></li>
+      <li><a href="3.html"style="color:green;text-decoration: underline">좋아하는것</a></li>
+    </ol>
+    <div id="article">
+    <h2>좋아하는것</h2>
+    <p>
+      밍쭈는 활발한 성격이라 뛰어 노는것을 좋아한다. 또한 먹성이 좋아 왠만한 간식은 다 좋아한다. 그리고 낮에 햇볓을쬐면서 창문밖을 보거나 낮잠자는 것을 좋아한다. 이 때에는 주로 캣타워에 올라가거나 내방에 있는 고양이 창문 해먹에 올라가있는다.
+    </p>
+    </div>
+  </div>
 </body>
 </html>
